@@ -1,0 +1,295 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+h1, h2, h3 {
+    color: #bb86fc;
+}
+
+.sidebar {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-right: 1px solid #333333;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #bb86fc;
+}
+
+.sidebar .stButton {
+    background-color: #03dac6;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar .stButton:hover {
+    background-color: #018786;
+}
+
+.stSuccess {
+    background-color: #033a2b;
+    color: #03dac6;
+    border: 1px solid #018786;
+}
+
+.stError {
+    background-color: #3d1a29;
+    color: #cf6679;
+    border: 1px solid #a53f56;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #333333;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #03dac6;
+    color: #121212;
+}
+
+.table tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+.table tr:hover {
+    background-color: #2a2a2a;
+}
+
+/* Modern tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 5px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #1e1e1e;
+    padding-bottom: 5px;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Customize scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+.stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {
+    height: 6px;
+}
+
+.stTabs [data-baseweb="tab-list"]::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+.stTabs [data-baseweb="tab-list"]::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    min-height: 50px;
+    min-width: 120px;
+    font-size: 0.85rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    background-color: #1e1e1e;
+    border-radius: 4px 4px 0 0;
+    padding: 6px 8px;
+    transition: all 0.3s ease;
+    color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #03dac6;
+    color: #121212;
+}
+
+/* Additional fix for the tab panel container */
+.stTabs [data-baseweb="tab-panel"] {
+    padding-top: 1rem;
+}
+
+/* Cards for sections */
+.card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    border: 1px solid #333333;
+}
+
+/* Button styling */
+.stButton > button {
+    background-color: #03dac6;
+    color: #121212;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    background-color: #018786;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Progress indicators */
+.stProgress > div > div > div {
+    background-color: #03dac6;
+}
+
+/* Improved select boxes */
+.stSelectbox label, .stMultiSelect label {
+    font-weight: 500;
+    color: #bb86fc;
+    margin-bottom: 5px;
+}
+
+/* Data frame styling */
+[data-testid="stDataFrame"] {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+[data-testid="stDataFrame"] table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+[data-testid="stDataFrame"] thead tr th {
+    background-color: #03dac6;
+    color: #121212;
+    padding: 12px 8px;
+    font-weight: 500;
+    text-align: left;
+}
+
+[data-testid="stDataFrame"] tbody tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+[data-testid="stDataFrame"] tbody tr:nth-child(odd) {
+    background-color: #1e1e1e;
+}
+
+/* Language selection dropdown */
+[data-testid="stSelectbox"][aria-label=""] {
+    min-width: 120px;
+}
+
+/* Brand logo and name */
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.logo-title h1 {
+    margin: 0;
+    padding: 0;
+    color: #bb86fc;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+    color: #9e9e9e;
+    margin-top: 40px;
+    border-top: 1px solid #333333;
+}
+
+footer a {
+    color: #03dac6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #666;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333333;
+    color: #e0e0e0;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 1px solid #444;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Animated loading state */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.loading {
+    animation: pulse 1.5s infinite;
+}
+
+/* Links */
+a {
+    color: #03dac6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Warning messages */
+.stWarning {
+    background-color: #332c10;
+    color: #f2c94c;
+    border: 1px solid #b3971c;
+}
+
+/* Info messages */
+.stInfo {
+    background-color: #183661;
+    color: #6b9eff;
+    border: 1px solid #4878d0;
+}
