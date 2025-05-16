@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Data Cleaner Application
 
 ## Overview
@@ -71,3 +72,7 @@ This project was created as part of my data analyst portfolio to demonstrate my 
 - Advanced visualization options for data exploration
 - Ability to save and load cleaning workflows
 - Custom validation rules for different data types 
+=======
+# Data-Cleaning-App
+
+>>>>>>> f39145227b06ade8cc75db7156a1349ea9e31b24
