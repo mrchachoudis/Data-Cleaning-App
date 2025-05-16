@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Data Cleaner Application
 
 ## Overview
@@ -26,9 +25,7 @@ Each cleaning step is documented for reproducibility, allowing users to track th
 To set up the project, clone the repository and install the required dependencies:
 
 ```bash
-git clone <repository-url>
-# cd data-cleaner # This line is no longer needed as the project root is data-cleaner
-# Ensure you are in the project root directory (e.g., Data-Cleaner)
+git clone https://github.com/mrchachoudis/Data-Cleaning-App
 pip install -r requirements.txt
 ```
 
@@ -71,8 +68,4 @@ This project was created as part of my data analyst portfolio to demonstrate my 
 - Support for additional file formats (Excel, JSON, Parquet)
 - Advanced visualization options for data exploration
 - Ability to save and load cleaning workflows
-- Custom validation rules for different data types 
-=======
-# Data-Cleaning-App
-
->>>>>>> f39145227b06ade8cc75db7156a1349ea9e31b24
+- Custom validation rules for different data types
